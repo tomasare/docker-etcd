@@ -1,7 +1,7 @@
 FROM oberthur/docker-ubuntu:16.04
 MAINTAINER Lukasz Bielinski <l.bielinski@oberthur.com>
 
-ENV ETCD_VER=v2.2.5
+ENV ETCD_VER=v2.3.7
 ENV DOWNLOAD_URL=https://github.com/coreos/etcd/releases/download
 
 # Prepare image
