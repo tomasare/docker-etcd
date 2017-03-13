@@ -16,6 +16,6 @@ RUN apt-get update \
 RUN curl -L ${DOWNLOAD_URL}/${ETCD_VER}/etcd-${ETCD_VER}-linux-amd64.tar.gz -o /tmp/etcd-${ETCD_VER}-linux-amd64.tar.gz
 RUN mkdir -p /opt/etcd && tar xzvf /tmp/etcd-${ETCD_VER}-linux-amd64.tar.gz -C /opt/etcd --strip-components=1
 RUN chmod +x /opt/etcd/etcd
-RUN export PATH=$PATH:/opt/etcd
+ENV PATH "$PATH:/opt/etcd"
 
 CMD ["/opt/etcd/etcd"]
