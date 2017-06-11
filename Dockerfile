@@ -1,7 +1,7 @@
 FROM oberthur/docker-ubuntu:16.04
 MAINTAINER Lukasz Bielinski <l.bielinski@oberthur.com>
 
-ENV _ETCD_VERSION=v3.0.17
+ENV _ETCD_VERSION=v2.3.7
 
 RUN curl -LO https://github.com/coreos/etcd/releases/download/$_ETCD_VERSION/etcd-$_ETCD_VERSION-linux-amd64.tar.gz && \
     tar xzvf etcd-$_ETCD_VERSION-linux-amd64.tar.gz && \
